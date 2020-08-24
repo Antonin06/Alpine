@@ -5,7 +5,10 @@ body {
 .App-logo {
   height: 4vmin;
   pointer-events: none;
-
+  margin: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,4 +16,30 @@ body {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+.btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 530px;
+  width: 250px;
+}
+
+.link {
+  color: inherit;
+}
+
+.link:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+h2, p {
+  position: relative;
+  bottom: 500px;
+}
+
+
+
 

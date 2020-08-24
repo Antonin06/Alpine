@@ -22,7 +22,7 @@ const Landing = () => (
 )
       
     const Home = () => ( 
-      <Container>
+      <Container fluid>
             <img src={logo} className="App-logo" alt="logo" />
       <Carousel>
   <Carousel.Item>
@@ -32,7 +32,7 @@ const Landing = () => (
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
+      <h2>First slide label</h2>
       <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
@@ -44,7 +44,7 @@ const Landing = () => (
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
+      <h2>Second slide label</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </Carousel.Caption>
   </Carousel.Item>
@@ -56,13 +56,14 @@ const Landing = () => (
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
+      <h2>Third slide label</h2>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-        <Link className="" to="/Configurator">Configurez votre Alpine!</Link>
+     <Button variant="info" size="lg" className="btn"><Link className="link" to="/Configurator">Commencer</Link></Button>{' '}
       </Container>
+      
   );
 
 
