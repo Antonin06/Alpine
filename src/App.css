@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: white;
 }
 
 .App-logo {
@@ -24,6 +24,7 @@ body {
   position: relative;
   bottom: 530px;
   width: 250px;
+  background-color: #0a57d7;
 }
 
 .link {
@@ -46,12 +47,37 @@ h2,h2 + p {
 }
 
 .card {
-  margin: 50px;
+  margin: 15px;
 }
 
-.groupcards {
-  border: 5px solid white;
+.btn {
+  background-color: #0a57d7;
 }
 
+.btn:hover {
+  background-color: #216deb;
+}
 
+.title {
+  background-color: rgba(0,0,0,.5);
+  color: white;
+  opacity: 0.6;
+  margin: 30px;
+ }
 
+ .groupcards {
+   margin-left: 5px;
+ }
+
+img {
+  -webkit-filter: grayscale(70%);
+  -moz-filter: grayscale(70%);
+  filter: grayscale(70%);
+  transition: all 0.5s ease;
+}
+
+img:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
