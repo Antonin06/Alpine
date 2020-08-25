@@ -17,8 +17,10 @@ import cuirnoir from '../images/cuir-noir.jpg'
 import cuirnoirdinamica from '../images/cuir-noir_dinamica.jpg'
 import cuirnoirperfore from '../images/cuir-noir_perfore.jpg'
 
-
-
+//Ici les imports des Components
+import ModeleList from './Modele/ModeleList'; //-------- <ModeleList/>
+import CouleurList from './Couleur/CouleurList'; //----- <CouleurList/>
+import JantesList from './Jantes/JantesList'; //-------- <JantesList/>
 
 
 
@@ -44,6 +46,8 @@ const Configurator = () => (
     </p>
   </Container>
 </Jumbotron>
+
+
 
 <h1>1/ Choisissez votre modèle :</h1>
 
