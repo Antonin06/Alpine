@@ -1,11 +1,10 @@
 import React from 'react';
 
 const EquipementsCard = (props) => {
-        return (
-          <>
-            <p>{props.equipements.name}</p>
-            <p>{props.equipements.prix}</p>
-          </>
-        )
+  return (
+    <div>
+      <p>{props.design.name}</p>
+    </div>
+      )
 }
 export default EquipementsCard;

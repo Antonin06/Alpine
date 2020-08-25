@@ -4,22 +4,21 @@ import { useSelector } from 'react-redux';
 
 const EquipementsList = () => {
 
-const equipements = useSelector((state) => state.equipements)
-console.log(equipements);
+  const designs = useSelector((state) => state.equipements.design)
 
-  const displayEquipements = () => {
-    return Object.keys(equipements).map(key => (
-      Object.keys(equipements[key]).map(key2 => (
-      <EquipementsCard equipements={equipements[key][key2]} />
-    ))));
+  const displayDesign = () => {
+    return Object.keys(designs).map(key => (
+      console.log(designs),
+        <EquipementsCard design={designs[key]} />
+      ));
   }
-  // console.log(equipements[key][key2]),
 
-    return (
-      <div className='row'>
-        {displayEquipements()}
-      </div>
-    );
-  }
+  return (
+    <div className='row'>
+    {displayDesign()}
+
+    </div>
+  );
+}
 
 export default EquipementsList;
