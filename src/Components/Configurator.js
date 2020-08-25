@@ -64,7 +64,7 @@ import CouleurList from './Couleur/CouleurList'; //--------------------- <Couleu
 import JantesList from './Jantes/JantesList'; //------------------------ <JantesList/>
 import SellerieList from './Sellerie/SellerieList'; //------------------ <SellerieList/>
 import EquipementsList from './Equipements/EquipementsList'; //--------- <EquipementsList/>
-
+import AccessoiresList from './Accessoires/AccessoiresList';
 
 
 const Configurator = () => (
@@ -90,7 +90,10 @@ const Configurator = () => (
   </Container>
 </Jumbotron>
 
+<AccessoiresList/>
+
 <h1>1/ Choisissez votre modèle :</h1>
+
 
 <CardGroup className="groupcards">
   <Card className ="card">
