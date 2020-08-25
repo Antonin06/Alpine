@@ -1,24 +1,26 @@
 import React from 'react';
-import EquipementsCard from './EquipementsCard';
+import Design from './Design';
+import Media from './Media';
+import Confort from './Confort';
+import Conduite from './Conduite';
+import Securité from './Securité';
+import Exterieur from './Exterieur';
+import Interieur from './Interieur';
+
 import { useSelector } from 'react-redux';
 
-const EquipementsList = () => {
 
-  const designs = useSelector((state) => state.equipements.design)
-
-  const displayDesign = () => {
-    return Object.keys(designs).map(key => (
-      console.log(designs),
-        <EquipementsCard design={designs[key]} />
-      ));
-  }
-
-  return (
-    <div className='row'>
-    {displayDesign()}
-
-    </div>
+const EquipementsList = () => (
+<>
+  <Design/>
+  <Media/>
+  <Confort/>
+  <Conduite/>
+  <Securité/>
+  <Exterieur/>
+  <Interieur/>
+</>
   );
-}
+
 
 export default EquipementsList;
