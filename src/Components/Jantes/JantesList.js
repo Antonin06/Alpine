@@ -1,6 +1,8 @@
 import React from 'react';
 import JantesCard from './JantesCard';
 import { useSelector } from 'react-redux';
+import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
+
 
 const JantesList = () => {
 
@@ -14,9 +16,14 @@ console.log(jantes);
   }
 
     return (
-      <div className='row'>
+      <Container>
+        <Row>
+        <Col></Col>
         {displayJantes()}
-      </div>
+        <Col></Col>
+        <Col></Col>
+        </Row>
+        </Container>
     );
   }
 

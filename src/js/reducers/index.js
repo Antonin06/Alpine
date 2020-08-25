@@ -1,7 +1,7 @@
 const initialState = {
 
   version: {
-    1: { name: "Pure", prix: 54700, initialPicture: "./assets/configurateur/modele/selection/pure.png",
+    1: { name: "Pure", prix: "54 700", initialPicture: "./assets/configurateur/modele/selection/pure.png",
     pictureVue: {
       serac: {
         blanc: {
@@ -46,7 +46,7 @@ const initialState = {
     }
   },
 
-  2: { name: "Legende", prix: 58500, initialPicture: "./assets/configurateur/modele/selection/legende.png",
+  2: { name: "Legende", prix: "58 500", initialPicture: "./assets/configurateur/modele/selection/legende.png",
   pictureVue: {
     legende: {
       blanc: {
@@ -127,16 +127,16 @@ jantes: {
 },
 
 sellerie: {
-  1: { name: "Sièges baquets en cuir noir et Dinamica", prix: 0 },
-  2: { name: "Sièges Confort en cuir noir perforé", prix: 800 },
-  3: { name: "Sièges Confort en cuir noir", prix: 0 },
-  4: { name: "Sièges Confort en cuir brun", prix: 800 }
+  1: { name: "Sièges baquets en cuir noir et Dinamica", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir_dinamica-1.jpg" },
+  2: { name: "Sièges Confort en cuir noir perforé", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-noir_perfore-1.jpg" },
+  3: { name: "Sièges Confort en cuir noir", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir-1.jpg" },
+  4: { name: "Sièges Confort en cuir brun", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-brun-1.jpg" },
 },
 
 equipements: {
   design: {
-    1: { name: "Pack héritage" , prix: 180 },
-    2: { name: "Repose-pieds passager en aluminium" , prix: 96 }
+    1: { name: "Pack héritage" , prix: 180, picture: "./assets/configurateur/equipements/categories/design/pack-heritage.jpg"  },
+    2: { name: "Repose-pieds passager en aluminium" , prix: 96, picture: "./assets/configurateur/equipements/categories/design/repose-pied-alu.jpg"  }
   },
   media: {
     1: { name: "Alpine Télémétrics", prix: 204 },

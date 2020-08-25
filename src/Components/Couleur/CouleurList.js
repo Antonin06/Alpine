@@ -1,6 +1,8 @@
 import React from 'react';
 import CouleurCard from './CouleurCard';
 import { useSelector } from 'react-redux';
+import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
+
 
 const CouleurList = () => {
 
@@ -9,14 +11,19 @@ console.log(couleur);
 
   const displayCouleur = () => {
     return Object.keys(couleur).map(key => (
-      <CouleurCard couleur={couleur[key]} />
+      <CouleurCard couleurs={couleur[key]} />
     ));
   }
 
     return (
-      <div className='row'>
+      <Container>
+        <Row>
+          <Col></Col>
         {displayCouleur()}
-      </div>
+      <Col></Col>
+      <Col></Col>
+      </Row>
+      </Container>
     );
   }
 

@@ -46,9 +46,6 @@ h2,h2 + p {
   left: 67em;
 }
 
-.card {
-  margin: 15px;
-}
 
 .btn {
   background-color: #0a57d7;
@@ -80,4 +77,8 @@ img:hover {
   -webkit-filter: grayscale(0%);
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
+}
+
+.card:hover {
+  border: 2px yellow solid;
 }
