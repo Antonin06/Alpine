@@ -1,7 +1,11 @@
 import React from 'react';
 import '../custom.css';
-import { Navbar, Breadcrumb, Jumbotron, Container } from 'react-bootstrap'
+import { Navbar, Breadcrumb, Jumbotron, Container, Image, Form, CardDeck, Card } from 'react-bootstrap'
 import logoBlue from '../logo.png'
+import selectionPure from '../pure.png'
+
+
+
 
 const Configurator = () => (
 <>
@@ -20,21 +24,30 @@ const Configurator = () => (
     <p className="mb-0">
       Alpine A110
     </p>
-    <p className="mb-0 align-right">
+    <p className="mb-0">
       €€€€€
     </p>
   </Container>
 </Jumbotron>
 
-<Breadcrumb>
+// <Image src={selectionPure} fluid  />
+//
+// <Form>
+// <Form.Group controlId="formBasicCheckbox">
+//     <Form.Check type="checkbox" label="Pure" />
+//     <Form.Check type="checkbox" label="Legend" />
+//   </Form.Group>
+// </Form>
+
+<Breadcrumb className="">
   <Breadcrumb.Item href="#">Version</Breadcrumb.Item>
   <Breadcrumb.Item href="">Couleurs</Breadcrumb.Item>
   <Breadcrumb.Item >Jantes</Breadcrumb.Item>
-  <Breadcrumb.Item >Scellerie</Breadcrumb.Item>
+  <Breadcrumb.Item >Sellerie</Breadcrumb.Item>
   <Breadcrumb.Item >Equipements</Breadcrumb.Item>
   <Breadcrumb.Item >Accessoires</Breadcrumb.Item>
-
 </Breadcrumb>
+
 </>
 )
 

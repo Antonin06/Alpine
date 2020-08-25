@@ -20,8 +20,8 @@ const Landing = () => (
         </Router>
         </>
 )
-      
-    const Home = () => ( 
+
+    const Home = () => (
       <Container fluid>
             <img src={logo} className="App-logo" alt="logo" />
       <Carousel>
@@ -63,7 +63,7 @@ const Landing = () => (
 </Carousel>
      <Button variant="info" size="lg" className="btn"><Link className="link" to="/Configurator">Commencer</Link></Button>{' '}
       </Container>
-      
+
   );
 
 
