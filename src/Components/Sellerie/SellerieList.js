@@ -1,6 +1,8 @@
 import React from 'react';
 import SellerieCard from './SellerieCard';
 import { useSelector } from 'react-redux';
+import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
+
 
 const SellerieList = () => {
 
@@ -14,9 +16,15 @@ console.log(sellerie);
   }
 
     return (
-      <div className='row'>
+      <Container>
+        <Row>
+          <Col></Col>
+          <Col></Col>
         {displaySellerie()}
-      </div>
+        <Col></Col>
+        <Col></Col>
+        </Row>
+        </Container>
     );
   }
 

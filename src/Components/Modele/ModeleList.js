@@ -1,6 +1,9 @@
 import React from 'react';
 import ModeleCard from './ModeleCard';
 import { useSelector } from 'react-redux';
+import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
+
+
 
 const ModeleList = () => {
 
@@ -14,9 +17,13 @@ console.log(version);
   }
 
     return (
-      <div className='row'>
+      <Container>
+        <Row>
+          <Col></Col>
         {displayModele()}
-      </div>
+          <Col></Col>
+        </Row>
+      </Container>
     );
   }
 
