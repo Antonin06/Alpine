@@ -56,42 +56,6 @@ import antivoljante from '../images/antivol-jantes.jpg'
 import cabochons from '../images/cabochons-metal.jpg'
 import housse from '../images/housse.jpg'
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const Configurator = () => (
 <>
   <Navbar bg="white" className="d-flex justify-content-center">
