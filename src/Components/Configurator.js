@@ -1,6 +1,6 @@
 import React from 'react';
 import '../custom.css';
-import { Navbar, Breadcrumb, Jumbotron, Container, Button } from 'react-bootstrap'
+import { Navbar, Jumbotron, Container, Button } from 'react-bootstrap'
 import logoBlue from '../logo.png'
 import Card from 'react-bootstrap/Card'
 import CardGroup from 'react-bootstrap/CardGroup'
@@ -45,15 +45,6 @@ const Configurator = () => (
   </Container>
 </Jumbotron>
 
-<Breadcrumb>
-  <Breadcrumb.Item href="#">Version</Breadcrumb.Item>
-  <Breadcrumb.Item href="">Couleurs</Breadcrumb.Item>
-  <Breadcrumb.Item >Jantes</Breadcrumb.Item>
-  <Breadcrumb.Item >Scellerie</Breadcrumb.Item>
-  <Breadcrumb.Item >Equipements</Breadcrumb.Item>
-  <Breadcrumb.Item >Accessoires</Breadcrumb.Item>
-
-</Breadcrumb>
 <h1>1/ Choisissez votre modèle :</h1>
 
 <CardGroup className="groupcards">
@@ -214,11 +205,7 @@ const Configurator = () => (
   </Card>
 </CardGroup>
 
-<h1>5/ Choisissez vos équipements</h1>
-
-<h1>Design</h1>
-
-
+<h1>Choisissez vos équipements</h1>
 </>
 )
 
