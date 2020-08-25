@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from '../logo-white.png';
-import img from '../A110_PURE_4.jpg';
-import img2 from '../A110_LEGENDE_1.jpg';
-import img3 from '../A110_PE_7.jpg';
+import img from '../images/A110_PURE_4.jpg';
+import img2 from '../images/A110_LEGENDE_1.jpg';
+import img3 from '../images/A110_PE_7.jpg';
 import '../App.css';
 import { Jumbotron, Container, Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -61,7 +61,7 @@ const Landing = () => (
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
-     <Button variant="info" size="lg" className="btn"><Link className="link" to="/Configurator">Commencer</Link></Button>{' '}
+     <Button variant="info" size="lg" className="bouton"><Link className="link" to="/Configurator">Commencer</Link></Button>{' '}
       </Container>
       
   );
