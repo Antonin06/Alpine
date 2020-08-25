@@ -89,8 +89,6 @@ const Configurator = () => (
   </Container>
 </Jumbotron>
 
-<EquipementsList/>
-
 <h1>1/ Choisissez votre modèle :</h1>
 
 <CardGroup className="groupcards">
