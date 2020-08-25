@@ -57,40 +57,12 @@ import cabochons from '../images/cabochons-metal.jpg'
 import housse from '../images/housse.jpg'
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //Ici les imports des Components
-import ModeleList from './Modele/ModeleList'; //-------- <ModeleList/>
-import CouleurList from './Couleur/CouleurList'; //----- <CouleurList/>
-import JantesList from './Jantes/JantesList'; //-------- <JantesList/>
+import ModeleList from './Modele/ModeleList'; //------------------------ <ModeleList/>
+import CouleurList from './Couleur/CouleurList'; //--------------------- <CouleurList/>
+import JantesList from './Jantes/JantesList'; //------------------------ <JantesList/>
+import SellerieList from './Sellerie/SellerieList'; //------------------ <SellerieList/>
+import EquipementsList from './Equipements/EquipementsList'; //--------- <EquipementsList/>
 
 
 
@@ -117,7 +89,7 @@ const Configurator = () => (
   </Container>
 </Jumbotron>
 
-
+<EquipementsList/>
 
 <h1>1/ Choisissez votre modèle :</h1>
 
