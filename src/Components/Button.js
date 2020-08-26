@@ -4,20 +4,19 @@ import { useDispatch } from "react-redux";
 const Button = (props) => {
 
   const dispatch = useDispatch()
-  const priceCar = () => {dispatch({ type: 'PRICE' , payload : props.version.id})}
-  // const hitMonster = () => {dispatch({ type: 'HIT_MONSTER' })}
-  // const looseMana = () => {dispatch({ type: 'LOOSE_MANA', payload : props.player.id })}
-  // const regenMana = () => {dispatch({ type: 'REGEN_MANA', payload : props.player.id })}
-  // const regenHp = () => {dispatch({ type: 'REGEN_HP', payload : props.player.id })}
+  // const priceCar = () => {dispatch({ type: 'PRICE' , payload : props.version.id})}
 
-  const AddPrice = () => {
-    priceCar()
+
+  const SelectModel = () => {
+    // priceCar()
+    dispatch({ type: 'MODEL' , payload : props.version.id});
+    dispatch({ type: 'TOTAL'});
   }
 
 
   return (
     <>
-    <button type="button" onClick={ () => (AddPrice()) } className="btn btn-success material-tooltip-main ">
+    <button type="button" onClick={ () => (SelectModel()) } className="btn btn-success material-tooltip-main ">
     </button>
     </>
   )

@@ -20,13 +20,13 @@ const Configurator = () => (
 <>
   <Navbar bg="white" className="d-flex justify-content-center">
     <Navbar.Brand href="#home">
-        <img
-          src={logoBlue}
-          className="mt-3 mb-3 App-logo"
-          alt="React Bootstrap logo"
-        />
-      </Navbar.Brand>
-    </Navbar>
+      <img
+        src={logoBlue}
+        className="mt-3 mb-3 App-logo"
+        alt="React Bootstrap logo"
+      />
+    </Navbar.Brand>
+  </Navbar>
 
     <Jumbotron fluid className="p-4 mb-0 sticky-top bg-black text-white">
   <Container className="d-inline-flex">
