@@ -1,5 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
+
 
 
 const Garage = () => {
@@ -8,15 +10,30 @@ const Garage = () => {
 
   const displayGarage = () => {
     return Object.keys(garage).map(key => (
-      <p>{garage[key].name}</p>
-
+      <>
+    <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
+    <Card className ="card">
+    <Card.Img variant="top"/>
+    <Card.Body>
+    <Card.Title>{garage[key].name} {garage[key].prix}€</Card.Title>
+      <Card.Text>
+      </Card.Text>
+    </Card.Body>
+    <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
+  </Card>
+</CardGroup>
+</>
     ));
   }
 
   return(
-    <div>
+    <Container>
+      <Row>
+        <Col></Col>
     {displayGarage()}
-    </div>
+    <Col></Col>
+    </Row>
+    </Container>
   )
 
 }

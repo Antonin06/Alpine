@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
 
 
 const Multimedia = () => {
@@ -8,15 +9,30 @@ const Multimedia = () => {
 
   const displayMultimedia = () => {
     return Object.keys(multimedia).map(key => (
-      <p>{multimedia[key].name}</p>
-
+      <>
+      <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
+  <Card className ="card">
+    <Card.Img variant="top"/>
+    <Card.Body>
+      <Card.Title>{multimedia[key].name} {multimedia[key].prix}€</Card.Title>
+      <Card.Text>
+      </Card.Text>
+    </Card.Body>
+    <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
+  </Card>
+</CardGroup>
+    </>
     ));
   }
 
   return(
-    <div>
+    <Container>
+      <Row>
+        <Col></Col>
     {displayMultimedia()}
-    </div>
+    <Col></Col>
+    </Row>
+    </Container>
   )
 
 }
