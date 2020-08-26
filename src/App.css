@@ -56,10 +56,17 @@ h2,h2 + p {
 }
 
 .title {
+  border: 2px black solid;
   background-color: rgba(0,0,0,.5);
   color: white;
-  opacity: 0.6;
   margin: 30px;
+  border-radius: 120px 0% 120px 0%;
+  margin-right: 15px;
+  padding-left: 20px;
+  -webkit-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.32);
+box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.32);
+opacity: 0.8;
  }
 
  .groupcards {
@@ -81,5 +88,23 @@ img:hover {
 
 .card:hover {
   border: 4px yellow solid;
+}
+
+.card {
+  min-height: 337px;
+  margin: 10px;
+  -webkit-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.32);
+-moz-box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.32);
+box-shadow: 0px 7px 11px 0px rgba(0,0,0,0.32);
+  
+}
+
+h1 {
+  font-family: inherit;
+}
+
+.nextbtn {
+  border-radius: 0% 70px 0 50px;
+  margin-left: 470px;
 }
 
