@@ -11,7 +11,8 @@ const Garage = () => {
   const displayGarage = () => {
     return Object.keys(garage).map(key => (
       <>
-    <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
+    <Col>
+    <CardGroup className="groupcards">
     <Card className ="card">
     <Card.Img variant="top" src={garage[key].picture}/>
     <Card.Body>
@@ -22,6 +23,7 @@ const Garage = () => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
 </>
     ));
   }
@@ -29,9 +31,7 @@ const Garage = () => {
   return(
     <Container>
       <Row>
-        <Col></Col>
     {displayGarage()}
-    <Col></Col>
     </Row>
     </Container>
   )

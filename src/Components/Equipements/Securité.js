@@ -10,7 +10,8 @@ const Securité = () => {
   const displaySecurité = () => {
     return Object.keys(securité).map(key => (
       <>
-      <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
+    <Col lg sm={6}>
+      <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={securité[key].picture}/>
     <Card.Body>
@@ -21,6 +22,7 @@ const Securité = () => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
 </>
     ));
   }
@@ -28,10 +30,7 @@ const Securité = () => {
   return(
     <Container>
       <Row>
-        <Col></Col>
-        <Col></Col>
    {displaySecurité()}
-   <Col></Col>
     </Row>
     </Container>
   )

@@ -17,11 +17,8 @@ const couleur = useSelector((state) => state.couleurs)
     return (
       <Container>
         <Row>
-          <Col></Col>
         {displayCouleur()}
-      <Col></Col>
-      <Col></Col>
-      </Row>
+        </Row>
       </Container>
     );
   }

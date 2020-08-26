@@ -17,11 +17,7 @@ const sellerie = useSelector((state) => state.sellerie)
     return (
       <Container>
         <Row>
-          <Col></Col>
-          <Col></Col>
         {displaySellerie()}
-        <Col></Col>
-        <Col></Col>
         </Row>
         </Container>
     );

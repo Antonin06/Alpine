@@ -10,7 +10,8 @@ const Confort = () => {
   const displayConfort = () => {
     return Object.keys(confort).map(key => (
       <>
-      <CardGroup style={{width: "15rem", margin: "15px"}} className="groupcards">
+    <Col sm={6}>
+      <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={confort[key].picture}/>
     <Card.Body>
@@ -21,6 +22,7 @@ const Confort = () => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
 </>
     ));
   }
@@ -28,11 +30,7 @@ const Confort = () => {
   return(
     <Container>
       <Row>
-        <Col></Col>
-        <Col></Col>
     {displayConfort()}
-    <Col></Col>
-    <Col></Col>
     </Row>
     </Container>
   )

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import { Button, Card , CardGroup } from 'react-bootstrap'
+import { Button, Card , CardGroup, Col } from 'react-bootstrap'
 
 const ModeleCard = (props) => {
         return (
-
- <CardGroup style={{width: '25rem', margin: '20px'}}  className="groupcards">
+<Col>
+ <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={props.version.initialPicture}/>
     <Card.Body>
@@ -16,6 +16,7 @@ const ModeleCard = (props) => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
   </CardGroup>
+  </Col>
         )
 }
 export default ModeleCard;

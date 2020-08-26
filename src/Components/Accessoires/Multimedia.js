@@ -10,7 +10,8 @@ const Multimedia = () => {
   const displayMultimedia = () => {
     return Object.keys(multimedia).map(key => (
       <>
-      <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
+      <Col>
+      <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={multimedia[key].picture}/>
     <Card.Body>
@@ -21,6 +22,7 @@ const Multimedia = () => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
     </>
     ));
   }
@@ -28,10 +30,8 @@ const Multimedia = () => {
   return(
     <Container>
       <Row>
-        <Col></Col>
     {displayMultimedia()}
-    <Col></Col>
-    </Row>
+ </Row>
     </Container>
   )
 

@@ -10,7 +10,8 @@ const Design = () => {
   const displayDesign = () => {
     return Object.keys(designs).map(key => (
       <>
-      <CardGroup style={{width: "25rem", margin: "20px"}} className="groupcards">
+      <Col>
+      <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={designs[key].picture}/>
     <Card.Body>
@@ -21,6 +22,7 @@ const Design = () => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
 </>
 
     ));
@@ -29,9 +31,7 @@ const Design = () => {
   return(
     <Container>
       <Row>
-        <Col></Col>
     {displayDesign()}
-    <Col></Col>
     </Row>
     </Container>
   )

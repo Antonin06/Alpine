@@ -18,10 +18,9 @@ const version = useSelector((state) => state.version)
     return (
       <Container>
         <Row>
-          <Col></Col>
+
         {displayModele()}
-          <Col></Col>
-        </Row>
+      </Row>
       </Container>
     );
   }

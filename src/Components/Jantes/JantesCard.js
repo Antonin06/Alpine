@@ -1,10 +1,11 @@
 import React from 'react';
-import { Button, Card , CardGroup } from 'react-bootstrap'
+import { Button, Card , CardGroup, Col } from 'react-bootstrap'
 
 
 const JantesCard = (props) => {
         return (
-  <CardGroup style={{width: '20rem', margin: '20px'}} className="groupcards">
+<Col lg sm={6}>
+  <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={props.jantes.picture}/>
     <Card.Body>
@@ -15,6 +16,7 @@ const JantesCard = (props) => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
         )
 }
 export default JantesCard;
