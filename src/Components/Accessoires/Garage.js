@@ -13,7 +13,7 @@ const Garage = () => {
       <>
     <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
     <Card className ="card">
-    <Card.Img variant="top"/>
+    <Card.Img variant="top" src={garage[key].picture}/>
     <Card.Body>
     <Card.Title>{garage[key].name} {garage[key].prix}€</Card.Title>
       <Card.Text>

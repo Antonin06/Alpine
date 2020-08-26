@@ -13,9 +13,9 @@ const Exterieur = () => {
       <>
       <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
   <Card className ="card">
-    <Card.Img variant="top"/>
+    <Card.Img variant="top" src={exterieur[key].picture}/>
     <Card.Body>
-      <Card.Title>Cabochons Alpine-métalisés 24€</Card.Title>
+    <Card.Title>{exterieur[key].name} {exterieur[key].prix}€</Card.Title>
       <Card.Text>
       </Card.Text>
     </Card.Body>

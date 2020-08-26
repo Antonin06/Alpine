@@ -12,7 +12,7 @@ const Multimedia = () => {
       <>
       <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
   <Card className ="card">
-    <Card.Img variant="top"/>
+    <Card.Img variant="top" src={multimedia[key].picture}/>
     <Card.Body>
       <Card.Title>{multimedia[key].name} {multimedia[key].prix}€</Card.Title>
       <Card.Text>
