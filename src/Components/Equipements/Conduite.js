@@ -10,7 +10,8 @@ const Conduite = () => {
   const displayConduite = () => {
     return Object.keys(conduite).map(key => (
       <>
-      <CardGroup style={{width: "15rem", margin: "15px"}} className="groupcards">
+      <Col sm={6}>
+      <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={conduite[key].picture}/>
     <Card.Body>
@@ -21,6 +22,7 @@ const Conduite = () => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
 </>
     ));
   }
@@ -28,12 +30,8 @@ const Conduite = () => {
   return(
     <Container>
       <Row>
-        <Col></Col>
-        <Col></Col>
     {displayConduite()}
-    <Col></Col>
-    <Col></Col>
-    </Row>
+     </Row>
     </Container>
   )
 

@@ -10,7 +10,8 @@ const Exterieur = () => {
   const displayExterieur = () => {
     return Object.keys(exterieur).map(key => (
       <>
-      <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
+      <Col lg sm={6}>
+      <CardGroup className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={exterieur[key].picture}/>
     <Card.Body>
@@ -21,6 +22,7 @@ const Exterieur = () => {
     <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
+</Col>
 </>
     ));
   }
@@ -28,10 +30,7 @@ const Exterieur = () => {
   return(
     <Container>
       <Row>
-        <Col></Col>
-        <Col></Col>
     {displayExterieur()}
-    <Col></Col>
     </Row>
     </Container>
   )

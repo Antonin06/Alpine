@@ -17,10 +17,7 @@ const jantes = useSelector((state) => state.jantes)
     return (
       <Container>
         <Row>
-        <Col></Col>
         {displayJantes()}
-        <Col></Col>
-        <Col></Col>
         </Row>
         </Container>
     );

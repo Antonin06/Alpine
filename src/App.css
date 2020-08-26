@@ -64,7 +64,7 @@ left: 67em;
 
  .groupcards {
    margin-left: 5px;
- }
+   }
 
 img {
   -webkit-filter: grayscale(70%);
@@ -80,5 +80,5 @@ img:hover {
 }
 
 .card:hover {
-  border: 2px yellow solid;
+  border: 4px yellow solid;
 }
