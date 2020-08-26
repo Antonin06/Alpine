@@ -1,6 +1,7 @@
 import React from 'react';
+import Button from '../Button';
 
-import { Button, Card , CardGroup, Col } from 'react-bootstrap'
+import { Card , CardGroup, Col } from 'react-bootstrap'
 
 const ModeleCard = (props) => {
         return (
@@ -13,7 +14,7 @@ const ModeleCard = (props) => {
       <Card.Text>
       </Card.Text>
     </Card.Body>
-    <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
+    <Button version={props.version} />
   </Card>
   </CardGroup>
   </Col>

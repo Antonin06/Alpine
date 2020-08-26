@@ -41,10 +41,10 @@ h2,h2 + p {
   bottom: 500px;
 }
 
-#prix {
+ /* #prix {
   position: relative;
-  left: 67em;
-}
+left: 67em;
+} */
 
 
 .btn {

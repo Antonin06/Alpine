@@ -1,7 +1,7 @@
 const initialState = {
 
   version: {
-    1: { name: "Pure", prix: "54 700", initialPicture: "./assets/configurateur/modele/selection/pure.png",
+    1: { name: "Pure", prix: 54700, initialPicture: "./assets/configurateur/modele/selection/pure.png", id: 1,
     pictureVue: {
       serac: {
         blanc: {
@@ -46,7 +46,7 @@ const initialState = {
     }
   },
 
-  2: { name: "Legende", prix: "58 500", initialPicture: "./assets/configurateur/modele/selection/legende.png",
+  2: { name: "Legende", prix: 58500, initialPicture: "./assets/configurateur/modele/selection/legende.png", id: 2,
   pictureVue: {
     legende: {
       blanc: {
@@ -201,16 +201,19 @@ accessoires: {
     3: { name: "Antivols pour jante - Noirs", prix: 51 , picture: "./assets/configurateur/accessoires/exterieur/antivol-jantes.jpg" },
   }
 },
+
+modelisation: "",
+
 }
 
 function rootReducer(state = initialState, action) {
   const id = action.payload
   switch (action.type) {
-    case "PRICE":
+    case "MODEL":
     return { ...state,
        version:{ ...state.version,
        [id]: { ...state.version[id],
-       prix: state.version[id].prix +100000},
+       prix: state.version[id].prix+ state.version[id].prix},
      }}
       default:
       return state;
