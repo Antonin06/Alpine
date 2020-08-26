@@ -4,8 +4,6 @@ import Multimedia from './Multimedia';
 import Interieur from './Interieur';
 import Garage from './Garage';
 import Exterieur from './Exterieur';
-import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
-import { useSelector } from 'react-redux';
 
 
 

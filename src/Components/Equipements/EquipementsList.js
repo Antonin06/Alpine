@@ -7,8 +7,6 @@ import Securité from './Securité';
 import Exterieur from './Exterieur';
 import Interieur from './Interieur';
 
-import { useSelector } from 'react-redux';
-
 
 const EquipementsList = () => (
 <>

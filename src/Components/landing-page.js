@@ -4,7 +4,7 @@ import img from '../images/A110_PURE_4.jpg';
 import img2 from '../images/A110_LEGENDE_1.jpg';
 import img3 from '../images/A110_PE_7.jpg';
 import '../App.css';
-import { Jumbotron, Container, Button } from 'react-bootstrap';
+import { Container, Button } from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Configurator from './Configurator';
 import { Link } from "react-router-dom";

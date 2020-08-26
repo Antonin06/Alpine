@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card , CardGroup, Container, Col, Row } from 'react-bootstrap'
+import { Button, Card , CardGroup } from 'react-bootstrap'
 
 
 const CouleurCard = (props) => {
