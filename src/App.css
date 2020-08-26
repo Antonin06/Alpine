@@ -64,7 +64,7 @@ h2,h2 + p {
 
  .groupcards {
    margin-left: 5px;
- }
+   }
 
 img {
   -webkit-filter: grayscale(70%);
@@ -82,3 +82,4 @@ img:hover {
 .card:hover {
   border: 2px yellow solid;
 }
+

@@ -103,7 +103,7 @@ const Configurator = () => (
 
 
 <AccessoiresList/>
-<i class="fa fa-4x fa-check-circle"></i>
+<i className="fa fa-4x fa-check-circle"></i>
 </>
 )
 
