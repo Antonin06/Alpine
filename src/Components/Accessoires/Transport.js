@@ -11,7 +11,7 @@ const Transport = () => {
   const displayTransport = () => {
     return Object.keys(transport).map(key => (
       <>
-  <CardGroup style={{width: "20rem", margin: "20px"}} className="groupcards">
+  <CardGroup style={{width: "20rem", margin: "28px"}} className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={transport[key].picture}/>
     <Card.Body>
