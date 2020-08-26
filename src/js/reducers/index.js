@@ -93,37 +93,37 @@ jantes: {
       }
     },
   }
-  },
-  2: { name: "Serac", prix: 1000, picture: "./assets/configurateur/jantes/selection/jante-serac.jpg",
-  pictureVue: {
-    couleur: {
-      blanc: {
-        2: "./assets/configurateur/jantes/vues/couleur-blanc_jante-serac(2).jpg",
-      },
-      bleu: {
-        2: "./assets/configurateur/jantes/vues/couleur-bleu_jante-serac(3).jpg",
-      },
-      noir: {
-        2: "./assets/configurateur/jantes/vues/couleur-noir_jante-serac(1).jpg",
-      }
+},
+2: { name: "Serac", prix: 1000, picture: "./assets/configurateur/jantes/selection/jante-serac.jpg",
+pictureVue: {
+  couleur: {
+    blanc: {
+      2: "./assets/configurateur/jantes/vues/couleur-blanc_jante-serac(2).jpg",
     },
-  }
-  },
-  3: { name: "Legende", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-legende.jpg",
-  pictureVue: {
-    couleur: {
-      blanc: {
-        3: "./assets/configurateur/jantes/vues/couleur-blanc_jante-legende(2).jpg"
-      },
-      bleu: {
-        3: "./assets/configurateur/jantes/vues/couleur-bleu_jante-legende(3).jpg"
-      },
-      noir: {
-        1: "./assets/configurateur/jantes/vues/couleur-noir_jante-legende(1).jpg"
-      }
+    bleu: {
+      2: "./assets/configurateur/jantes/vues/couleur-bleu_jante-serac(3).jpg",
     },
-  }
-  }
+    noir: {
+      2: "./assets/configurateur/jantes/vues/couleur-noir_jante-serac(1).jpg",
+    }
+  },
+}
+},
+3: { name: "Legende", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-legende.jpg",
+pictureVue: {
+  couleur: {
+    blanc: {
+      3: "./assets/configurateur/jantes/vues/couleur-blanc_jante-legende(2).jpg"
+    },
+    bleu: {
+      3: "./assets/configurateur/jantes/vues/couleur-bleu_jante-legende(3).jpg"
+    },
+    noir: {
+      1: "./assets/configurateur/jantes/vues/couleur-noir_jante-legende(1).jpg"
+    }
+  },
+}
+}
 },
 
 sellerie: {
@@ -204,7 +204,16 @@ accessoires: {
 }
 
 function rootReducer(state = initialState, action) {
-  return state;
-}
-
-export default rootReducer;
+  const id = action.payload
+  switch (action.type) {
+    case "PRICE":
+    return { ...state,
+       version:{ ...state.version,
+       [id]: { ...state.version[id],
+       prix: state.version[id].prix +100000},
+     }}
+      default:
+      return state;
+    }
+  }
+  export default rootReducer;

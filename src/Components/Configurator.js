@@ -58,7 +58,7 @@ import AccessoiresList from './Accessoires/AccessoiresList'; //--------- <Access
 const Configurator = () => (
 <>
   <Navbar bg="white" className="d-flex justify-content-center">
-      <Navbar.Brand href="#home">
+    <Navbar.Brand href="#home">
         <img
           src={logoBlue}
           className="mt-3 mb-3 App-logo"
@@ -73,7 +73,7 @@ const Configurator = () => (
       Alpine A110
     </p>
     <p className="mb-0 align-right" id="prix">
-      €€€€€
+      €€€€
     </p>
   </Container>
 </Jumbotron>
