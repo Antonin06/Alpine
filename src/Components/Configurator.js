@@ -52,7 +52,7 @@ import CouleurList from './Couleur/CouleurList'; //--------------------- <Couleu
 import JantesList from './Jantes/JantesList'; //------------------------ <JantesList/>
 import SellerieList from './Sellerie/SellerieList'; //------------------ <SellerieList/>
 import EquipementsList from './Equipements/EquipementsList'; //--------- <EquipementsList/>
-import AccessoiresList from './Accessoires/AccessoiresList';
+import AccessoiresList from './Accessoires/AccessoiresList'; //--------- <AccessoiresList/>
 
 
 const Configurator = () => (
@@ -78,6 +78,7 @@ const Configurator = () => (
   </Container>
 </Jumbotron>
 
+<AccessoiresList/>
 <h1 className="title">1/ Choisissez votre modèle :</h1>
 
 <ModeleList/>

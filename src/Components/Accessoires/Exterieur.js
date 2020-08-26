@@ -8,7 +8,10 @@ const Exterieur = () => {
 
   const displayExterieur = () => {
     return Object.keys(exterieur).map(key => (
+      <>
       <p>{exterieur[key].name}</p>
+      <p>{exterieur[key].prix}</p>
+      </>
 
     ));
   }
