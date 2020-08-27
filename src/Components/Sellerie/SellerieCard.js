@@ -8,9 +8,8 @@ const SellerieCard = (props) => {
   <Card className ="card">
     <Card.Img variant="top" src={props.sellerie.picture}/>
     <Card.Body>
-      <Card.Title></Card.Title>
+      <Card.Title>{props.sellerie.name} {props.sellerie.prix}€</Card.Title>
       <Card.Text>
-      {props.sellerie.name} {props.sellerie.prix}€
       </Card.Text>
     </Card.Body>
     {/*<Button variant="info" size="lg" className="btn">Choisir</Button>{' '}*/}

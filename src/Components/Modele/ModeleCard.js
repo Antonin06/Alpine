@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { version } from 'react';
 import Button from '../Button';
 import { useDispatch } from "react-redux";
 
@@ -12,10 +12,16 @@ const ModeleCard = (props) => {
     // priceCar()
     dispatch({ type: 'MODELE' , payload : props.version.name});
 
-    var card = document.querySelector(`.card${props.version.id}`)
-
-    card.classList.add('toto')
-    console.log(card);
+    var card1 = document.querySelector(`.card${props.version.id = 1}`)
+    var card2 = document.querySelector(`.card${props.version.id = 2}`)
+    card1.classList.toggle('selected')
+    card2.classList.toggle('selected')
+    if (card1.classList.contains('selected')) {
+      card2.classList.remove('selected')
+    }
+    if (card2.classList.contains('selected')) {
+      card1.classList.remove('selected')
+    }
   }
 
   return (
