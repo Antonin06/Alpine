@@ -11,7 +11,7 @@ const Design = () => {
     return Object.keys(designs).map(key => (
       <>
       <Col>
-      <CardGroup className="groupcards">
+      <CardGroup  key={key} className="groupcards">
   <Card className ="card">
     <Card.Img variant="top" src={designs[key].picture}/>
     <Card.Body>
@@ -19,7 +19,7 @@ const Design = () => {
       <Card.Text>
       </Card.Text>
     </Card.Body>
-    <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
+    <Button key={key} variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
 </Col>

@@ -7,11 +7,18 @@ import { Container, Col, Row } from 'react-bootstrap'
 const JantesList = () => {
 
 const jantes = useSelector((state) => state.jantes)
+const model = useSelector((state) => state.modele)
 
   const displayJantes = () => {
-    return Object.keys(jantes).map(key => (
-      <JantesCard jantes={jantes[key]} />
-    ));
+    return Object.keys(jantes).map(key => {
+
+      if (jantes[key].model === model ) {
+        return (<JantesCard key={key} jantes={jantes[key]} /> )
+
+      }
+
+
+    });
   }
 
     return (

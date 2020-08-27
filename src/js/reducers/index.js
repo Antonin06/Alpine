@@ -79,7 +79,7 @@ couleurs: {
 },
 
 jantes: {
-  1: { name: "Standard", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-standard.jpg",
+  1: { model : 'Pure' ,name: "Standard", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-standard.jpg",
   pictureVue: {
     couleur: {
       blanc: {
@@ -94,7 +94,7 @@ jantes: {
     },
   }
 },
-2: { name: "Serac", prix: 1000, picture: "./assets/configurateur/jantes/selection/jante-serac.jpg",
+2: { model : 'Pure', name: "Serac", prix: 1000, picture: "./assets/configurateur/jantes/selection/jante-serac.jpg",
 pictureVue: {
   couleur: {
     blanc: {
@@ -109,7 +109,7 @@ pictureVue: {
   },
 }
 },
-3: { name: "Legende", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-legende.jpg",
+3: { model : 'Legende', name: "Legende", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-legende.jpg",
 pictureVue: {
   couleur: {
     blanc: {
@@ -202,19 +202,23 @@ accessoires: {
   }
 },
 
-modelisation: "",
-
+modele: "",
+price: 0,
 }
 
 function rootReducer(state = initialState, action) {
+
+
   const id = action.payload
+
+
   switch (action.type) {
     case "MODEL":
+    console.log(action.payload);
     return { ...state,
-       version:{ ...state.version,
-       [id]: { ...state.version[id],
-       prix: state.version[id].prix+ state.version[id].prix},
-     }}
+       modele: action.payload,
+       price: state.price + 1000
+   }
       default:
       return state;
     }

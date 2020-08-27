@@ -10,6 +10,7 @@ const Button = (props) => {
   const SelectModel = () => {
     // priceCar()
     dispatch({ type: 'MODEL' , payload : props.version.id});
+    
     dispatch({ type: 'TOTAL'});
   }
 
