@@ -11,10 +11,10 @@ const JantesCard = (props) => {
 
   var jantes1 = document.querySelector(`.jantes${props.jantes.id = 1}`)
   var jantes2 = document.querySelector(`.jantes${props.jantes.id = 2}`)
-  var jantes3 = document.querySelector(`.jantes${props.jantes.id = 3}`)
+  // var jantes3 = document.querySelector(`.jantes${props.jantes.id = 3}`)
   jantes1.classList.toggle('selected')
   jantes2.classList.toggle('selected')
-  jantes3.classList.add('selected')
+  // jantes3.classList.toggle('selected')
 
   if (jantes1.classList.contains('selected')) {
     jantes2.classList.remove('selected')
@@ -28,7 +28,7 @@ const JantesCard = (props) => {
         return (
 <Col lg sm={6}>
   <CardGroup className="groupcards">
-  <Card onClick={ () => (SelectJantes()) } className ={`card jante${props.jantes.id}`}>
+  <Card onClick={ () => (SelectModel()) } className ={`card jantes${props.jantes.id}`}>
     <Card.Img variant="top" src={props.jantes.picture}/>
     <Card.Body>
       <Card.Title>Jantes {props.jantes.name} {props.jantes.prix}€</Card.Title>
