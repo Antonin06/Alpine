@@ -1,8 +1,11 @@
 import React from 'react';
 import { Button, Card , CardGroup, Col } from 'react-bootstrap'
+import { useDispatch } from 'react-redux';
 
 
 const CouleurCard = (props) => {
+
+
         return (
 <Col lg sm={6}>
 <CardGroup className="groupcards">

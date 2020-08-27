@@ -73,9 +73,9 @@ const initialState = {
 },
 
 couleurs: {
-  1: { name: "Teinte spéciale Bleu Alpine", prix: 1800, picture: "./assets/configurateur/couleurs/selection/bleu.jpg"},
-  2: { name: "Teinte métallisée Noir Profond", prix: 840, picture: "./assets/configurateur/couleurs/selection/noir.jpg" },
-  3: { name: "Peinture opaque Blanc Glacier", prix: 0, picture: "./assets/configurateur/couleurs/selection/blanc.jpg" }
+  1: {id: 1, name: "Teinte spéciale Bleu Alpine", prix: 1800, picture: "./assets/configurateur/couleurs/selection/bleu.jpg"},
+  2: {id: 2, name: "Teinte métallisée Noir Profond", prix: 840, picture: "./assets/configurateur/couleurs/selection/noir.jpg" },
+  3: {id: 3, name: "Peinture opaque Blanc Glacier", prix: 0, picture: "./assets/configurateur/couleurs/selection/blanc.jpg" }
 },
 
 jantes: {

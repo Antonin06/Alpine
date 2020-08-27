@@ -57,7 +57,7 @@ left: 67em;
 
 .title {
   border: 2px black solid;
-  background-color: rgba(0,0,0,.5);
+  background-color: #0a57d7;
   color: white;
   margin: 30px;
   border-radius: 120px 0% 120px 0%;
@@ -107,5 +107,20 @@ h1 {
 .nextbtn {
   border-radius: 0% 70px 0 50px;
   margin-left: 470px;
+}
+
+.selected {
+  border: 4px yellow solid;
+  animation: MoveUpDown 0.3s linear ;
+
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  70% {
+    bottom: 30px;
+  }
 }
 
