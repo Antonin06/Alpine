@@ -33,7 +33,7 @@ const Configurator = () => (
     <p className="mb-0" id="prix">
       Alpine A110
     </p>
-    <p className="mb-0 align-right" id="prix">
+    <p className="mb-0 align-right ml-5" id="prix">
       <Prix/>
     </p>
   </Container>

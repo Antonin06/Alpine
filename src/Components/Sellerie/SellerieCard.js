@@ -13,7 +13,7 @@ const SellerieCard = (props) => {
       {props.sellerie.name} {props.sellerie.prix}€
       </Card.Text>
     </Card.Body>
-    <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
+    {/*<Button variant="info" size="lg" className="btn">Choisir</Button>{' '}*/}
   </Card>
 </CardGroup>
 </Col>

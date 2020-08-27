@@ -8,16 +8,12 @@ import { Card , CardGroup, Col } from 'react-bootstrap'
 const ModeleCard = (props) => {
 
   const dispatch = useDispatch()
-
   const SelectModel = () => {
     // priceCar()
-    dispatch({ type: 'MODEL' , payload : props.version.name});
-
-
-    dispatch({ type: 'TOTAL'});
+    dispatch({ type: 'MODELE' , payload : props.version.name});
 
     var card = document.querySelector(`.card${props.version.id}`)
-    
+
     card.classList.add('toto')
     console.log(card);
   }

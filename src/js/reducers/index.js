@@ -127,10 +127,10 @@ pictureVue: {
 },
 
 sellerie: {
-  1: { name: "Sièges baquets en cuir noir et Dinamica", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir_dinamica-1.jpg" },
-  2: { name: "Sièges Confort en cuir noir perforé", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-noir_perfore-1.jpg" },
-  3: { name: "Sièges Confort en cuir noir", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir-1.jpg" },
-  4: { name: "Sièges Confort en cuir brun", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-brun-1.jpg" },
+  1: { model : 'Pure', name: "Sièges baquets en cuir noir et Dinamica", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir_dinamica-1.jpg" },
+  2: { model : 'Pure', name: "Sièges Confort en cuir noir perforé", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-noir_perfore-1.jpg" },
+  3: { model : 'Legende', name: "Sièges Confort en cuir noir", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir-1.jpg" },
+  4: { model : 'Legende', name: "Sièges Confort en cuir brun", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-brun-1.jpg" },
 },
 
 equipements: {
@@ -203,22 +203,28 @@ accessoires: {
 },
 
 modele: "",
+selectSellerie: "",
 price: 0,
 }
 
 function rootReducer(state = initialState, action) {
 
-
   const id = action.payload
 
-
   switch (action.type) {
-    case "MODEL":
-    console.log(action.payload);
+
+    case "MODELE":
     return { ...state,
        modele: action.payload,
-       price: state.price + 1000
+       selectSellerie: action.payload,
+       price: state.price + action.payload.prix
    }
+
+   case "SELECTED_SCELLERIE":
+   return { ...state,
+
+  }
+
       default:
       return state;
     }

@@ -14,10 +14,7 @@ const model = useSelector((state) => state.modele)
 
       if (jantes[key].model === model ) {
         return (<JantesCard key={key} jantes={jantes[key]} /> )
-
       }
-
-
     });
   }
 

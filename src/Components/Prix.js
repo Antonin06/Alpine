@@ -7,10 +7,8 @@ import { useSelector } from 'react-redux';
 const Prix = () => {
   const price = useSelector((state) => state.price)
 
-
-
   return (
-    <p> {price} </p>
+    <p> {price} €</p>
   );
 }
 
