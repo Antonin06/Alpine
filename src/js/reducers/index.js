@@ -73,13 +73,13 @@ const initialState = {
 },
 
 couleurs: {
-  1: {id: 1, name: "Teinte spéciale Bleu Alpine", prix: 1800, picture: "./assets/configurateur/couleurs/selection/bleu.jpg"},
-  2: {id: 2, name: "Teinte métallisée Noir Profond", prix: 840, picture: "./assets/configurateur/couleurs/selection/noir.jpg" },
-  3: {id: 3, name: "Peinture opaque Blanc Glacier", prix: 0, picture: "./assets/configurateur/couleurs/selection/blanc.jpg" }
+  1: {id: 1 , name: "Teinte spéciale Bleu Alpine", prix: 1800, picture: "./assets/configurateur/couleurs/selection/bleu.jpg"},
+  2: {id: 2 , name: "Teinte métallisée Noir Profond", prix: 840, picture: "./assets/configurateur/couleurs/selection/noir.jpg" },
+  3: {id: 3 , name: "Peinture opaque Blanc Glacier", prix: 0, picture: "./assets/configurateur/couleurs/selection/blanc.jpg" }
 },
 
 jantes: {
-  1: { model : 'Pure' ,name: "Standard", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-standard.jpg",
+  1: { id: 1, model : 'Pure' ,name: "Standard", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-standard.jpg",
   pictureVue: {
     couleur: {
       blanc: {
@@ -94,7 +94,7 @@ jantes: {
     },
   }
 },
-2: { model : 'Pure', name: "Serac", prix: 1000, picture: "./assets/configurateur/jantes/selection/jante-serac.jpg",
+2: { id: 2, model : 'Pure', name: "Serac", prix: 1000, picture: "./assets/configurateur/jantes/selection/jante-serac.jpg",
 pictureVue: {
   couleur: {
     blanc: {
@@ -109,7 +109,7 @@ pictureVue: {
   },
 }
 },
-3: { model : 'Legende', name: "Legende", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-legende.jpg",
+3: { id: 3, model : 'Legende', name: "Legende", prix: 0, picture: "./assets/configurateur/jantes/selection/jante-legende.jpg",
 pictureVue: {
   couleur: {
     blanc: {
@@ -127,10 +127,10 @@ pictureVue: {
 },
 
 sellerie: {
-  1: { model : 'Pure', name: "Sièges baquets en cuir noir et Dinamica", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir_dinamica-1.jpg" },
-  2: { model : 'Pure', name: "Sièges Confort en cuir noir perforé", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-noir_perfore-1.jpg" },
-  3: { model : 'Legende', name: "Sièges Confort en cuir noir", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir-1.jpg" },
-  4: { model : 'Legende', name: "Sièges Confort en cuir brun", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-brun-1.jpg" },
+  1: { id: 1, model : 'Pure', name: "Sièges baquets en cuir noir et Dinamica", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir_dinamica-1.jpg" },
+  2: { id: 2, model : 'Pure', name: "Sièges Confort en cuir noir perforé", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-noir_perfore-1.jpg" },
+  3: { id: 3, model : 'Legende', name: "Sièges Confort en cuir noir", prix: 0, picture: "./assets/configurateur/interieurs/vues/cuir-noir-1.jpg" },
+  4: { id: 4, model : 'Legende', name: "Sièges Confort en cuir brun", prix: 800, picture: "./assets/configurateur/interieurs/vues/cuir-brun-1.jpg" },
 },
 
 equipements: {
