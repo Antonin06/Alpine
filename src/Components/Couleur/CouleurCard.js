@@ -19,12 +19,12 @@ const CouleurCard = (props) => {
     couleur3.classList.remove('selected')
   }
   if (couleur2.classList.contains('selected')) {
-    couleur1.classList.remove('selected')
     couleur3.classList.remove('selected')
+    couleur1.classList.remove('selected')
   }
   if (couleur3.classList.contains('selected')) {
-    couleur1.classList.remove('selected')
     couleur2.classList.remove('selected')
+    couleur1.classList.remove('selected')
   }
 }
         return (
