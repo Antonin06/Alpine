@@ -6,7 +6,9 @@ import { useDispatch } from 'react-redux';
 const CouleurCard = (props) => {
 
   const dispatch = useDispatch()
-  const SelectModel = () => {
+  const SelectCouleur = () => {
+
+    dispatch({ type: 'MODELE' , payload : props.couleurs.name});
 
   var couleur1 = document.querySelector(`.couleur${props.couleurs.id = 1}`)
   var couleur2 = document.querySelector(`.couleur${props.couleurs.id = 2}`)
@@ -30,7 +32,7 @@ const CouleurCard = (props) => {
         return (
 <Col lg sm={6}>
 <CardGroup className="groupcards">
-  <Card onClick={ () => (SelectModel()) } className ={`card couleur${props.couleurs.id}`}>
+  <Card onClick={ () => (SelectCouleur()) } className ={`card couleur${props.couleurs.id}`}>
     <Card.Img variant="top" src={props.couleurs.picture}/>
     <Card.Body>
       <Card.Title>{props.couleurs.name} {props.couleurs.prix}€</Card.Title>

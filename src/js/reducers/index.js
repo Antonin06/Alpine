@@ -203,6 +203,8 @@ accessoires: {
 },
 
 modele: "",
+selectCouleur: "",
+selectJantes: "",
 selectSellerie: "",
 price: 0,
 }
@@ -210,21 +212,16 @@ price: 0,
 function rootReducer(state = initialState, action) {
 
   const id = action.payload
+  console.log(action.payload)
 
   switch (action.type) {
-
     case "MODELE":
     return { ...state,
        modele: action.payload,
        selectSellerie: action.payload,
+       selectJantes: action.payload,
        price: state.price + action.payload.prix
    }
-
-   case "SELECTED_SCELLERIE":
-   return { ...state,
-
-  }
-
       default:
       return state;
     }
