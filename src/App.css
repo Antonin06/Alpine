@@ -110,7 +110,7 @@ h1 {
 }
 
 .selected {
-  border: 4px yellow solid;
+  border: 4px green solid;
   animation: MoveUpDown 0.3s linear ;
 
 }
