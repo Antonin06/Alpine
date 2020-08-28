@@ -9,24 +9,8 @@ const JantesCard = (props) => {
   const dispatch = useDispatch()
   const SelectModel = () => {
 
-  var jantes1 = document.querySelector(`.jantes${props.jantes.id = 1}`)
-  var jantes2 = document.querySelector(`.jantes${props.jantes.id = 2}`)
-  var jantes3 = document.querySelector(`.jantes${props.jantes.id = 3}`)
-  jantes1.classList.toggle('selected')
-  jantes2.classList.toggle('selected')
-  jantes3.classList.toggle('selected')
-
-  if (jantes1.classList.contains('selected')) {
-    jantes2.classList.remove('selected')
-  }
-  if (jantes2.classList.contains('selected')) {
-    jantes1.classList.remove('selected')
-  }
-  if (jantes3.classList.contains('selected')) {
-    jantes2.classList.remove('selected')
-    jantes1.classList.remove('selected')
-
-  }
+  var jantes = document.querySelector(`.jantes${props.jantes.id}`)
+  jantes.classList.toggle('selected')
 }
 
         return (

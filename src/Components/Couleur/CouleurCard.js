@@ -10,24 +10,10 @@ const CouleurCard = (props) => {
 
     dispatch({ type: 'MODELE' , payload : props.couleurs.name});
 
-  var couleur1 = document.querySelector(`.couleur${props.couleurs.id = 1}`)
-  var couleur2 = document.querySelector(`.couleur${props.couleurs.id = 2}`)
-  var couleur3 = document.querySelector(`.couleur${props.couleurs.id = 3}`)
-  couleur1.classList.toggle('selected')
-  couleur2.classList.toggle('selected')
-  couleur3.classList.toggle('selected')
-  if (couleur1.classList.contains('selected')) {
-    couleur2.classList.remove('selected')
-    couleur3.classList.remove('selected')
-  }
-  if (couleur2.classList.contains('selected')) {
-    couleur3.classList.remove('selected')
-    couleur1.classList.remove('selected')
-  }
-  if (couleur3.classList.contains('selected')) {
-    couleur2.classList.remove('selected')
-    couleur1.classList.remove('selected')
-  }
+  var couleur = document.querySelector(`.couleur${props.couleurs.id}`)
+  couleur.classList.toggle('selected')
+
+
 }
         return (
 <Col lg sm={6}>

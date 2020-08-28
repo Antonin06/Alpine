@@ -135,8 +135,8 @@ sellerie: {
 
 equipements: {
   design: {
-    1: { name: "Pack héritage" , prix: 180, picture: "./assets/configurateur/equipements/categories/design/pack-heritage.jpg"  },
-    2: { name: "Repose-pieds passager en aluminium" , prix: 96, picture: "./assets/configurateur/equipements/categories/design/repose-pied-alu.jpg"  }
+    1: {id: 1, name:  "Pack héritage" , prix: 180, picture: "./assets/configurateur/equipements/categories/design/pack-heritage.jpg"  },
+    2: {id: 2, name: "Repose-pieds passager en aluminium" , prix: 96, picture: "./assets/configurateur/equipements/categories/design/repose-pied-alu.jpg"  }
   },
   media: {
     1: { name: "Alpine Télémétrics", prix: 204, picture: "./assets/configurateur/equipements/categories/media-et-navigation/alpine-metrics.jpg" },

@@ -22,7 +22,7 @@ const Landing = () => (
 )
 
     const Home = () => (
-      <Container fluid>
+<>
             <img src={logo} className="App-logo" alt="logo" />
       <Carousel>
   <Carousel.Item>
@@ -32,8 +32,8 @@ const Landing = () => (
       alt="First slide"
     />
     <Carousel.Caption>
-      <h2>First slide label</h2>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h2>Customisez votre véhicule</h2>
+      <p>Votre voiture sur mesure, en deux clics !</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -44,8 +44,8 @@ const Landing = () => (
     />
 
     <Carousel.Caption>
-      <h2>Second slide label</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h2>Avec ou sans options, vous faites toujours le bon choix</h2>
+      <p>Nos produits sont certifiés Alpine et répondent parfaitement à vos besoins</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -56,13 +56,13 @@ const Landing = () => (
     />
 
     <Carousel.Caption>
-      <h2>Third slide label</h2>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h2>Le futur de demain, c'est maintenant</h2>
+      <p>Notre gamme de véhicules allie qualité, modernité, et sécurité</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
      <Button variant="info" size="lg" className="bouton"><Link className="link" to="/Configurator">Commencer</Link></Button>{' '}
-      </Container>
+</>
 
   );
 

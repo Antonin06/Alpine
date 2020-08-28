@@ -20,7 +20,6 @@ const Garage = () => {
       <Card.Text>
       </Card.Text>
     </Card.Body>
-    <Button variant="info" size="lg" className="btn">Choisir</Button>{' '}
   </Card>
 </CardGroup>
 </Col>
