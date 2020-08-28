@@ -211,15 +211,16 @@ price: 0,
 
 function rootReducer(state = initialState, action) {
 
-  const id = action.payload
+  // const id = action.payload
   console.log(action.payload)
 
   switch (action.type) {
     case "MODELE":
     return { ...state,
        modele: action.payload,
-       selectSellerie: action.payload,
+       selectCouleur: action.payload,
        selectJantes: action.payload,
+       selectSellerie: action.payload,
        price: state.price + action.payload.prix
    }
       default:

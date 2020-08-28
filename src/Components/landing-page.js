@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../logo-white.png';
+import logo from '../logo.png';
 import img from '../images/A110_PURE_4.jpg';
 import img2 from '../images/A110_LEGENDE_1.jpg';
 import img3 from '../images/A110_PE_7.jpg';
