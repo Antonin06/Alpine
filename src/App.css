@@ -87,7 +87,7 @@ img:hover {
 }
 
 .card:hover {
-  border: 4px yellow solid;
+  border: 4px black solid;
 }
 
 .card {
@@ -107,6 +107,7 @@ h1 {
 .nextbtn {
   border-radius: 0% 70px 0 50px;
   margin-left: 470px;
+  margin-bottom: 7px;
 }
 
 .selected {
@@ -122,5 +123,9 @@ h1 {
   70% {
     bottom: 30px;
   }
+}
+
+.hidden {
+  display: none;
 }
 

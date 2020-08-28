@@ -14,7 +14,6 @@ const JantesCard = (props) => {
   var jantes3 = document.querySelector(`.jantes${props.jantes.id = 3}`)
   jantes1.classList.toggle('selected')
   jantes2.classList.toggle('selected')
-  jantes3.classList.add('selected')
   
   if (jantes1.classList.contains('selected')) {
     jantes2.classList.remove('selected')
@@ -22,6 +21,10 @@ const JantesCard = (props) => {
   }
   if (jantes2.classList.contains('selected')) {
     jantes1.classList.remove('selected')
+  }
+  if (jantes1 = null) {
+    jantes3.classList.add('selected')
+    jantes2.classList.remove('selected')
   }
 }
 
